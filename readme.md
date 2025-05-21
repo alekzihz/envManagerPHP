@@ -19,7 +19,6 @@ Una utilidad sencilla en PHP para cargar variables de entorno desde un archivo `
 ├── .env \
 └── index.php \
 
-
 ---
 
 ## 🤔 Ejemplo de `.env`
@@ -56,14 +55,16 @@ URL_ANUNZIA_OPENAI=http://localhost/api/openai
 
 # Email de envío
 FROM_MAIL=info@ejemplo.com
-````
+```
 
 ## 🚀 ¿Cómo usarlo?
 
 ### 1. Incluye el `config.php`
+
 ```php
 require_once __DIR__ . '/config.php';
 ```
+
 ### 2. Accede a tus constantes
 
 ```php
@@ -75,11 +76,14 @@ echo DOMINIO;
 
 ### 🔒 Seguridad
 
-#### ❗ Nunca subas tu archivo .env a un repositorio público.  
+#### ❗ Nunca subas tu archivo .env a un repositorio público.
+
 #### Asegúrate de tener esto en tu .gitignore:
+
 ```bash
 .env
 ```
 
 ### 🧾 Licencia
+
 MIT License – libre para usar, modificar y compartir.
